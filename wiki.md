@@ -1,28 +1,31 @@
 # Welcome to the SRA Toolkit Wiki
 ## Mission 
-Part of the mission of NCBI is to facilitate new discoveries through data analysis. SRA Toolkit supports that mission by enabling users to download and analyze sequence data.  
+Part of the [mission of NCBI](https://www.ncbi.nlm.nih.gov/home/about/mission/) is to facilitate new discoveries through data analysis. SRA Toolkit supports that mission by enabling users to download and analyze sequence data.  
 
 ## What is SRA Toolkit? 
-The SRA Toolkit is a set of programs, also called Tools,  you install on your local computer or Cloud-based computer used for data  dumping. Data dumping is a technology term for extracting and copying data from one system to another.  
+The _SRA Toolkit_ is a set of programs, also called _Tools_,  you install on your local computer or Cloud-based computer used for _data dumping_. 
+_Data dumping_ is a technology term for extracting and copying data from one system to another.  
 
-The SRA Toolkit offers a set of custom-designed commands that users run in a command line terminal. The commands have names that refer to their purpose: 
+The SRA Toolkit offers a set of custom-designed commands that users run in a [command line terminal](how_to_CLI.md). The commands have names that refer to their purpose: 
 - **Tool**: A generic name for a command in the SRA Toolkit 
-- **Dumpers**: SRA Toolkit Tools that download and/or transform data 
+- **Dumpers**: SRA Toolkit Tools that download and/or transform data
+  
 Users primarily use dumpers for two goals: 
-- Download data  
-- Transform data from .sra or .sralite format to another format 
-Toolkit cannot dump original submitted files. Instead, use the Cloud Data Delivery Service. 
+- To download data  
+- To transform data from .sra or .sralite format to another format
+
+Toolkit cannot dump original submitted files. Instead, use the [Cloud Data Delivery Service](https://www.ncbi.nlm.nih.gov/sra/docs/data-delivery/). 
 
 ## What Is an Accession? 
-An accession is a permanent alphanumeric reference code used to locate an NCBI database record.  An accession is a permanent alphanumeric reference code used to locate an NCBI database record. A run accession represents a set of reads submitted to SRA.  
+An accession is a permanent alphanumeric reference code used to locate an NCBI database record. A run accession represents a set of reads submitted to SRA.  
 
 ## How Do I Search for the Accessions I Need? 
 Some users start with a general search for a specific organism and a specific library type in one of our search options: 
-- NCBI Search 
-- GCP BigQuery 
-- AWS Athena 
+- [NCBI Search](https://www.ncbi.nlm.nih.gov/sra/docs/srasearch/) 
+- [GCP BigQuery](https://www.ncbi.nlm.nih.gov/sra/docs/sra-bigquery/) 
+- [AWS Athena](https://www.ncbi.nlm.nih.gov/sra/docs/sra-athena/) 
  
-Users can create a list of accessions using the Search options shown above and can use the [SRA Run Selector](https://github.com/NCBI-Hackathons/ncbi-cloud-tutorials/blob/master/SRA tutorials/tutorial_SRA_run_selector.md) to further narrow the search. Then they can use the many Toolkit tools to download accessions, convert formats, and evaluate the data
+Users can create a list of accessions using the Search options shown above and can use the [SRA Run Selector](https://github.com/NCBI-Hackathons/ncbi-cloud-tutorials/blob/master/SRA%tutorials/tutorial_SRA_run_selector.md) to further narrow the search. Then they can use the many Toolkit tools to download accessions, convert formats, and evaluate the data
 
 # Options to Download Sequence Data 
 Before you download Toolkit, learn about the different options to download sequence data: 
@@ -38,8 +41,8 @@ Prefetch Tool Benefits
 - If network connectivity is interrupted, prefetch resumes the download rather than starting over. 
 
 ## Toolkit Dumper Tools 
-Dumper Tools are commands that either:  
-- Convert data that has been prefetched or 
+_Dumper Tools_ are commands that either:  
+- Convert data that has been _refetched_ or 
 - Download and convert data in one step or  
 For large amounts of data, to download and convert in one step: 
 - May be slower  
@@ -47,68 +50,65 @@ For large amounts of data, to download and convert in one step:
 - Will have to restart the download if there is a network interruption 
 
 ## Run Browser 
-Run Browser is a browser-based tool often used to quickly view sequences from NCBI Search Bar. Use Run Browser to download one run at a time that contains less than 5 Gbases of sequence in fasta or fastq format. 
+_Run Browser_ is a browser-based tool often used to quickly view sequences from [NCBI Search Bar](https://www.ncbi.nlm.nih.gov/sra/docs/srasearch/). Use Run Browser to download one run at a time that contains less than 5 Gbases of sequence in fasta or fastq format. 
 
 ## Cloud Data Delivery Service (CDDS)  
 SRA data is available on the Google Cloud Platform (GCP) and Amazon Web Services (AWS) clouds. All publicly available, unassembled read data and authorized-access human data, including original submitted formats, are available for access and compute through these cloud providers. The SRA Team created CDDS to enable downloading to these Cloud locations.  
 
-Toolkit cannot download accessions in their originally submitted format or transform to original submitted format. To download data in Original Source format, use Cloud Data Delivery Service (CDDS). 
+Toolkit cannot download accessions in their originally submitted format or transform to original submitted format. To download data in Original Source format, use [Cloud Data Delivery Service (CDDS)](https://www.ncbi.nlm.nih.gov/sra/docs/data-delivery). 
 
-## Data Download Costs 
+# Data Download Costs 
 ### Toolkit 
 Using Toolkit, you can download SRA data without egress charges from the following options: 
 - The NCBI Cloud to your Cloud storage (use CDDS)
 - NCBI to your local computer
 
 ### CDDS – Cloud Data Deliver Service 
-For Cloud users use CDDS to download all SRA files, including source files and Covid files (which are the Original Submitted files) from the NCBI Cloud to your Cloud storage for free. If you  download from your Cloud storage to your local computer, you will incur egress charges from your Cloud Service Provider. See NCBI’s blog post on CDDS Charges. 
+For Cloud users use CDDS to download all SRA files, including source files and Covid files (which are the Original Submitted files) from the NCBI Cloud to your Cloud storage for free. If you  download from your Cloud storage to your local computer, you will incur egress charges from your Cloud Service Provider. See [NCBI’s blog post on CDDS Charges](https://ncbiinsights.ncbi.nlm.nih.gov/2021/09/23/sra-cloud-bucket/?utm_source=ncbi_insights&utm_medium=referral&utm_campaign=sra-data-distribution-20221215). 
 The CDDS service limits downloads to 5TB per 30 days. 
+
+**Figure: SRA End User Access Costs**
+
 ![SRA End User Access Costs](images/wiki/datadownloadcosts.png)
 
-For more information on the Cloud, see SRA in the Cloud on the NCBI website and Install Toolkit in the Cloud later in this Wiki. 
+For more information on the Cloud, see [SRA in the Cloud](https://www.ncbi.nlm.nih.gov/sra/docs/sra-cloud/) on the NCBI website and [Install Toolkit in the Cloud](https://github.com/ncbi/sra-tools/wiki/01.-Downloading-SRA-Toolkit). 
 
 # Things to Know Prior to Using Toolkit 
 **1.	Do you know how to use a Command Line Terminal?**  
-Review the mini lesson on How to Use Command Line. 
+Review the mini lesson on [How to Use Command Line](how_to_CLI.md). 
+
 **2.	Do you know what your “current working directory”** is? 
-- The word directory is the technical term for a computer folder. The current working directory is folder from which the user is currently working. 
-- You see it in a command line terminal:
-The working directory is the folder to the left of the > greater than sign 
+- The word _directory_ is the technical term for a computer folder. The _current working directory (CWD)_ is the folder from which the user is currently working. 
+- You see it in a command line terminal: The working directory is the folder to the left of the > greater than sign
+
+**Figure: Example of Working Directory**
+  
 ![Image of Working Directory](images/wiki/workingdir.png)]
 
 **3. Do you need base quality scores?**
-
 - No – choose .sralite format 
-- Yes – choose .sra (also called SRA Normalized) format - Not Sure – see [SRA Data Formats](https://www.ncbi.nlm.nih.gov/sra/docs/sra-data-formats/) 
+- Yes – choose .sra (also called SRA Normalized) format
+- Not Sure – see [SRA Data Formats](https://www.ncbi.nlm.nih.gov/sra/docs/sra-data-formats/) 
 
-**4 Does Toolkit provide a conversion tool for the format you need?**  
+**4. Does Toolkit provide a conversion tool for the format you need?**  
 Toolkit includes tools called dumpers to convert the .sra or .sralite formats to the following formats: 
-
 - FASTQ 
-
 - BAM/SAM 
-
 - SFF 
-
 - ABI Native – has color space data only 
-
   - cfasta 
-
   - qual 
- 
 - Illumina Native 
-
   - qcal 
-
   - seq    
 
-If you need a different format than listed above, then pull Original Submitted files via CDDS. 
+If you need a different format than listed above, then pull Original Submitted files via [CDDS](https://www.ncbi.nlm.nih.gov/sra/docs/data-delivery/). 
 
 **5. Which computer are you using?**
 
 Your options for computing include your personal computer, your organization’s computer, or a cloud-based computer like AWS’s _EC2_ or GCP’s _Compute Engine_.  
 
-**What is cache space?** 
+**6.What is _cache space_?** 
 
 Cache space is where .sra and .sralite formatted files are stored on your computer to facilitate the work done by other Toolkit tools. In Toolkit’s cache space, two types of work happen:   
 
@@ -122,31 +122,33 @@ Process-local is where files that are needed to help convert formats will be sto
 
 ***user-repository***
 
-User-repository is a persistent storage location for runs and supporting files, if any, in the .sra or .sralite formats. After .sra or .sralite formatted data is downloaded here, if another Toolkit tool needs the information for that accession, that tool will access the data from this folder rather than downloading it again. 
+User-repository is a persistent storage location for runs and supporting files, if any, in the .sra or .sralite formats. After .sra or .sralite formatted data are downloaded here, if another Toolkit tool needs the information for that accession, that tool will access the data from this folder rather than downloading it again. 
 
 **7. Where will you locate your cache space to convert and store your data?** 
 
-After downloading Toolkit, you will choose the locations for process-local and user-repository cache spaces. The two types of work can occur in the same location or in two different locations: 
+After downloading Toolkit, you will choose the locations for _process-local_ and _user-repository_ cache spaces. The two types of work can occur in the same location or in two different locations: 
 
 - _process-local_ must be saved on the primary hard drive 
 
-- If you have access to a secondary computer drive, use this drive for your User Repository (storage) as this significantly speeds up processing on the primary drive 
+- If you have access to a secondary computer drive, use this drive for your _user-repository_ (storage) as this significantly speeds up processing on the primary drive
 
-|  | _process-local_ | _User Repository_ (storage)|
+We recommend you create two folders: one for the user-repository space and one for process-local space.
+
+|  | _process-local_ | _Optional user-repository_ (storage)|
 |--- | --- |---|
 | PC | C: drive | D: drive|
-| Mac | HD drive <br>/ select /data/$USER (/home/$USER is limited to a quota of 16 GB)  | external drive |
+| Mac | HD drive <br> - select /data/$USER (/home/$USER is limited to a quota of 16 GB)  | external drive |
 | AWS | EC2 | EBS Volumne | 
 | GCP | Compute Engine | Persistent Disk |
-| Linux | /dev/sda <br>/ select /data/$USER (/home/$USER is limited to a quota of 16 GB) | /dev/sdb |
+| Linux | /dev/sda <br> - select /data/$USER (/home/$USER is limited to a quota of 16 GB) | /dev/sdb |
 
 
-We recommend you create two folders: one for the user-repository space and one for process-local space.  
+ 
 
 **8. How large is the data you want to download?** 
 
 Check the size of your accession in [NCBI Search Results](https://www.ncbi.nlm.nih.gov/sra/docs/srasearch/). The Size column shows the size of .sra format in gibibytes (Gb). 
-![Where to find accession size](images/wiki/gibutes/png)
+![Where to find accession size](images/wiki/gibibutyes.png)
 
 Alternatively, from the command line terminal, type the following command to see information that includes the size of the accession in bytes: 
 
