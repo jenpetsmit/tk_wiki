@@ -63,7 +63,7 @@ Using Toolkit, you can download SRA data without egress charges from the followi
 ### CDDS – Cloud Data Deliver Service 
 For Cloud users use CDDS to download all SRA files, including source files and Covid files (which are the Original Submitted files) from the NCBI Cloud to your Cloud storage for free. If you  download from your Cloud storage to your local computer, you will incur egress charges from your Cloud Service Provider. See NCBI’s blog post on CDDS Charges. 
 The CDDS service limits downloads to 5TB per 30 days. 
-![SRA End User Access Costs](../images/wiki/datadownloadcosts.png)
+![SRA End User Access Costs](images/wiki/datadownloadcosts.png)
 
 For more information on the Cloud, see SRA in the Cloud on the NCBI website and Install Toolkit in the Cloud later in this Wiki. 
 
@@ -146,7 +146,7 @@ We recommend you create two folders: one for the user-repository space and one f
 **8. How large is the data you want to download?** 
 
 Check the size of your accession in [NCBI Search Results](https://www.ncbi.nlm.nih.gov/sra/docs/srasearch/). The Size column shows the size of .sra format in gibibytes (Gb). 
-![Where to find accession size](//..images/wiki/gibutes/png)
+![Where to find accession size](images/wiki/gibutes/png)
 
 Alternatively, from the command line terminal, type the following command to see information that includes the size of the accession in bytes: 
 
