@@ -134,7 +134,7 @@ After downloading Toolkit, you will choose the locations for _process-local_ and
 
 We recommend you create two folders: one for the user-repository space and one for process-local space.
 
-|  | _process-local_ | _Optional user-repository_ (storage)|
+| Operating System  | _process-local_ | _Optional user-repository_ (storage)|
 |--- | --- |---|
 | PC | C: drive | D: drive|
 | Mac | HD drive <br> - select /data/$USER (/home/$USER is limited to a quota of 16 GB)  | external drive |
@@ -148,6 +148,9 @@ We recommend you create two folders: one for the user-repository space and one f
 **8. How large is the data you want to download?** 
 
 Check the size of your accession in [NCBI Search Results](https://www.ncbi.nlm.nih.gov/sra/docs/srasearch/). The Size column shows the size of .sra format in gibibytes (Gb). 
+
+**Figure: Finding the Accession Size Using NCBI Entrez Search**
+
 ![Where to find accession size](images/wiki/gibibutyes.png)
 
 Alternatively, from the command line terminal, type the following command to see information that includes the size of the accession in bytes: 
@@ -156,9 +159,9 @@ Alternatively, from the command line terminal, type the following command to see
 
 To convert the data from prefetched .sra or .sralite, your process-local cache space will need to be large enough to complete the work.  
 
-Before you _prefetch_ your data, make a quick estimation about the hard-drive space required. Estimates are approximate. 
+Before you _prefetch_ your data, make a quick estimation about the hard-drive space required.   
 
-Example:  _fasterq-dump_ Tool  
+**Example:  _fasterq-dump_ Tool**  
 
 - The final FASTQ data, which downloads to the current working directory, will be approximately 7 times the size of the run.  
 
@@ -168,7 +171,7 @@ Example:  _fasterq-dump_ Tool
 
 - If you use one space for both (_user-repository_ and _process-local_), the space you need during the conversion is approximately 17 times the size of the run (worst case scenario).  
 
-- You can use a secondary computer drive for your user repository, for example, D: drive, EBS volume (AWS), or Persistent Disk (GCP), which speeds up processing on the primary drive 
+- Optionally you can use a secondary computer drive for your user repository, for example, D: drive, EBS volume (AWS), or Persistent Disk (GCP), which speeds up processing on the primary drive 
 
 **Table. Example of Space Needed for Conversion and Storage**
 
@@ -178,8 +181,8 @@ Example:  _fasterq-dump_ Tool
 | FASTQ format file size   | 7 times the size of the run in FASTQ format   | 7 X 410 GB = 2, 871 GB  |
 | Conversion space needed for fasterq-dump tool  | 10 times the fastq files size* | 10 x 2,871 GB = 28,710 GB  | 
 | Total Space needed for 1 drive  | Space for FASTQ format plus Space for Conversion | 2,870 +28,710 = 31,580 GB  |
-| Space needed for 2 drives  | Primary drive for conversion: C Drive, Google Compute Engine, EC2 
-/ Secondary drive for storage: Z Drive, EBS, Persistent Disk  | Primary Drive: 2,871 GB / Secondary Drive: 28,710 GB  |
+| Space needed for 2 drives  | Primary drive for conversion: C Drive, Google Compute Engine, EC2 | Primary Drive: 2,871 GB |
+|   | Secondary drive for storage: Z Drive, EBS, Persistent Disk  | Secondary Drive: 28,710 GB  |
 
 *The fasterq-dump tool will not always require 10 times the size of the final output-file; this is a worst-case scenario.   
 
@@ -198,12 +201,18 @@ If you need more space than your local computer offers, consider downloading the
 In this screenshot, the C drive has 394 GB of space.  
 
 If you have a secondary drive, repeat the steps. In this screenshot, the secondary drive is the U: drive. If you have a secondary drive, the letter could be different. 
+
+**Figure: Amount of Drive Space on PC**
+
 ![Amount of Space Available](images/wiki/secondarydrive.png)
 
 **Mac**
 1. From _Apple menu_, click **About This Mac** 
 
 2. Click the **Storage tab**
+
+**Figure: Amount of Drive Space on Mac**
+
 ![Amount of Space Available](images/wiki/secondarydriveMac.png)
 
 **Linux**
@@ -212,6 +221,9 @@ On Linux systems, you can check how much space you have by running the following
  `$df -h .`
 
 Under the 4th column _Avail_,_ you see the amount of space available. Take into consideration that there might be limits set by your administrator that may not be visible. 
+
+**Figure: Amount of Drive Space on Linux**
+
 ![Amount of Space Available](images/wiki/secondarydrivelinux.png)
 
 **Cloud**
