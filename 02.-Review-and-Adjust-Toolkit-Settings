@@ -10,6 +10,84 @@ Toolkit installs with default settings. Review and adjust these settings using t
 
 The _vdb-config_ tool is a user interface used for adjusting Toolkit settings. See Figure. Alternatively, you can use a terminal window and type [vdb-config- ADD LINK To APPENDIX WITH COMMANDS}(/vdb-config-commmands.html) commands to adjust settings.  
 
-**Figure. vdb-config Interface – Main Ta**
-![vdb-config Interface - Main Tab](images/02/
+**Figure. vdb-config Interface – Main Tab**
 
+![vdb-config Interface - Main Tab](images/02/vdb-config-main.png)
+
+1. From the command line, type the following command to open the vdb-config tool interface: 
+
+`vdb-fig -i`
+
+![vdb-config -i Command](images/02/vdb-config-i.png)
+
+2. Press the **Enter** key and wait for interface to load. It may take a few moments to load. 
+
+The blue _vdb-config_ interface displays. 
+
+To move the cursor on the _vdb-config_ screen: 
+
+* PC: Press the **Tab** key on a PC  
+
+* Mac: Press **Option and Tab keys** at the same time to jump to the next option  
+
+* Press the **letter key** that corresponds to the option with the red letter 
+
+## Main Tab 
+
+From the interactive vdb-config screen, the Main tab on the vdb-config page displays. 
+
+![vdb-config -i Command](images/02/vdb-config-main-arrow.png)
+
+### Enable Remote Access Option 
+
+3. _Enable Remote Access_ enables the SRA Toolkit tools to connect to SRA remote storage locations (NCBI, AWS, or GCP) via https. 
+
+4. Press the **E key** until the **X** displays in the box to Enable Remote Access. 
+
+![vdb-config -i Command](images/02/vdb-config-main-enableremoteaccess.png)
+
+## Preferring SRA Lite files (simplified base quality scores) 
+
+5. To download SRA Lite files with simplified base quality scores, press the **Q key** until an _X_ displays in the box next to _Prefer SRA Lite files with simplified base quality scores_.  
+
+![vdb-config -i Command](images/02/vdb-config-main-qualityscores.png)
+
+  i. To download SRA format with full per base quality scores (download is slower and uses more storage), leave the option not selected or press the **Q key** until the _X_ nolonger displays. 
+
+For more information about SRA and SRA Lite formats, see [SRA Data Formats](https://www.ncbi.nlm.nih.gov/sra/docs/sra-data-formats/). 
+
+## Cache Tab
+
+The **Cache** tab is where you indicate two locations for Toolkit work to occur: 
+
+* Where to store downloaded files (_user-repository_)  
+
+* Where to convert data from one format to another (_process-local_) 
+
+If you need more information on selecting a location for user-repository or process-local, see [Things to Know](wiki.html#Things-to-know) for more information.  
+
+### Enable _local file-caching_
+
+This option is already enabled. It should _only_ be deselected in special cases (e.g., compute-clusters when a common location cannot be configured. 
+
+### Location of user-repository  
+
+8. Set the location of the _user-repository_. The folder must be empty to be added in the text field. 
+
+If you do not enter a path for the _user-repository_ and run the _prefetch tool_, the files download to the current working directory. 
+
+In Linux or Mac  
+
+* For _user-repository_, select **/data/$USER** 
+
+   - As _/home/$USER_ is limited to a quota of 16 GB 
+
+### Location of process-local 
+
+9. Set the location of _process-local_
+
+If a location is not identified for process-local in Toolkit settings, Toolkit will likely download to current working directory.  The _fasterq-dump tool_ will warn you if it estimates there is not enough space. 
+
+ 
+
+Press the C key to display the Cache tab. You may need to scroll to see the top menu. 
