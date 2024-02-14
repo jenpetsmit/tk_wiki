@@ -78,10 +78,10 @@ The CDDS service limits downloads to approximately 5TB per 30 days.
 
 ![SRA End User Access Costs](images/wiki/datadownloadcosts.png)
 
-For more information on the Cloud, see [SRA in the Cloud](https://www.ncbi.nlm.nih.gov/sra/docs/sra-cloud/) on the NCBI website and [Install Toolkit in the Cloud](https://github.com/ncbi/sra-tools/wiki/01.-Downloading-SRA-Toolkit). 
+For more information on the Cloud, see [SRA in the Cloud](https://www.ncbi.nlm.nih.gov/sra/docs/sra-cloud/) on the NCBI website and [Install Toolkit in the Cloud](01.-Downloading-SRA-Toolkit.md). 
 
 # Things to Know Prior to Using Toolkit 
-**1.	Command Line Terminal?**  
+**1.	Command Line Terminal**  
 The internet has many resources for learning to use a Command Line terminal.
 
 **2.	Do you know what your “current working directory”** is? 
@@ -113,7 +113,7 @@ If you need a different format than listed above, then pull Original Submitted f
 
 **5. Which computer are you using?**
 
-Your options for computing include your personal computer, your organization’s computer, or a cloud-based computer like AWS’s _EC2_ or GCP’s _Compute Engine_.  
+Your options for computing include your personal computer, your organization’s computer, or a Cloud-based computer like AWS’s _EC2_ or GCP’s _Compute Engine_.  
 
 **6.What is _cache space_?** 
 
