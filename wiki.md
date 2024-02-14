@@ -6,7 +6,7 @@ Part of the [mission of NCBI](https://www.ncbi.nlm.nih.gov/home/about/mission/) 
 The _SRA Toolkit_ is a set of programs, also called _Tools_,  you install on your local computer or Cloud-based computer that are used for _data dumping_. 
 _Data dumping_ is a technology term for extracting and copying data from one system to another.  
 
-The SRA Toolkit offers a set of custom-designed commands that users run in a [command line terminal](https://www.freecodecamp.org/news/command-line-for-beginners/). The commands have names that refer to their purpose: 
+The SRA Toolkit offers a set of custom-designed commands that users run in a command line terminal. The commands have names that refer to their purpose: 
 - **Tool**: A generic name for a command in the SRA Toolkit 
 - **Dumpers**: SRA Toolkit tools that download and/or transform data
   
@@ -25,14 +25,14 @@ Some users start with a search for a specific organism and a specific library ty
 - [GCP BigQuery](https://www.ncbi.nlm.nih.gov/sra/docs/sra-bigquery/) 
 - [AWS Athena](https://www.ncbi.nlm.nih.gov/sra/docs/sra-athena/) 
  
-Using the Search options shown above, users can create a list of accessions. Users can use the [SRA Run Selector](https://github.com/NCBI-Hackathons/ncbi-cloud-tutorials/blob/master/SRA%tutorials/tutorial_SRA_run_selector.md) to further narrow the search. Then they can use the many Toolkit tools to download accessions, convert formats, and evaluate the data.
+Using the Search options shown above, users can create a list of accessions. Users can use the [SRA Run Selector](https://www.ncbi.nlm.nih.gov/Traces/study/) to further narrow the search. Then they can use the many Toolkit tools to download accessions, convert formats, and evaluate the data.
 
 # Options to Download Sequence Data 
 Before you download Toolkit, learn about the some options to download sequence data: 
-- Toolkit's _Prefetch_ tool 
-- Dumper Tools  
-- Run Browser 
-- Cloud Data Delivery Service (CDDS) 
+- [Toolkit's _Prefetch_ tool](#toolkit's-prefetch-tool) 
+- [Dumper Tools](#toolkit's-dumper-tools)  
+- [Run Browser](#run-browser) 
+- [Cloud Data Delivery Service (CDDS)](#cloud-data-delivery-service-(cdds)) 
 
 ## Toolkit's Prefetch Tool 
 When you are downloading many runs, best practice is to run the _Prefetch_ tool, which downloads the data in .sra or .sralite format.  
@@ -174,7 +174,7 @@ Before you _prefetch_ your data, make a quick estimation about the hard-drive sp
 
 - The final FASTQ data, which downloads to the current working directory, will be approximately 7 times the size of the run.  
 
-  - You can designate a different destination for your FASTQ files by using the -O option. See [fasterq-dump options](wiki/toolkit-appendix.html#fasterq-dump)
+  - You can designate a different destination for your FASTQ files by using the -O option. See [fasterq-dump options](toolkit-appendix.md#fasterq-dump)
 
 - The _fasterq-dump_ tool needs the _process-local_ cache space to complete the conversion, about 10 times the size of the final fastq files.  
 
