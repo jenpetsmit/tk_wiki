@@ -29,10 +29,10 @@ Using the Search options shown above, users can create a list of accessions. Use
 
 # Options to Download Sequence Data 
 Before you download Toolkit, learn about the some options to download sequence data: 
-- [Toolkit's _Prefetch_ tool](#toolkit's-prefetch-tool) 
-- [Dumper Tools](#toolkit's-dumper-tools)  
+- [Toolkit's _Prefetch_ tool](#toolkits-prefetch-tool) 
+- [Dumper Tools](#toolkits-dumper-tools)  
 - [Run Browser](#run-browser) 
-- [Cloud Data Delivery Service (CDDS)](#cloud-data-delivery-service-(cdds)) 
+- [Cloud Data Delivery Service (CDDS)](#cloud-data-delivery-service) 
 
 ## Toolkit's Prefetch Tool 
 When you are downloading many runs, best practice is to run the _Prefetch_ tool, which downloads the data in .sra or .sralite format.  
@@ -58,8 +58,8 @@ For large amounts of data, to download and convert in one step:
 ## Run Browser 
 _Run Browser_ is a browser-based tool often used to quickly view sequences from [NCBI Search Bar](https://www.ncbi.nlm.nih.gov/sra/docs/srasearch/). Use Run Browser to download one run at a time that contains less than 5 Gbases of sequence in fasta or fastq format. 
 
-## Cloud Data Delivery Service (CDDS)  
-SRA data is available on the Google Cloud Platform (GCP) and Amazon Web Services (AWS) clouds. Almost all publicly available, unassembled read data and authorized-access human data, including original submitted formats, are available for download from these Cloud providers. The SRA Team created CDDS to enable downloading to user's Cloud storage.  
+## Cloud Data Delivery Service   
+SRA data is available on the Google Cloud Platform (GCP) and Amazon Web Services (AWS) clouds. Almost all publicly available, unassembled read data and authorized-access human data, including original submitted formats, are available for download from these Cloud providers. The SRA Team created the Cloud Data Delivery Service (CDDS) to enable downloading to user's Cloud storage.  
 
 Toolkit cannot download accessions in their originally submitted format or transform to original submitted format. To download data in Original Source format, use [Cloud Data Delivery Service (CDDS)](https://www.ncbi.nlm.nih.gov/sra/docs/data-delivery). 
 
