@@ -1,35 +1,35 @@
 # Welcome to the SRA Toolkit Wiki
 ## Mission 
-Part of the [mission of NCBI](https://www.ncbi.nlm.nih.gov/home/about/mission/) is to facilitate new discoveries through data analysis. SRA Toolkit supports that mission by enabling users to download and analyze sequence data.  
+Part of the [mission of NCBI](https://www.ncbi.nlm.nih.gov/home/about/mission/) is to facilitate new discoveries through data analysis. The _SRA Toolkit_ supports that mission by enabling users to download and analyze sequence data.  
 
 ## What is SRA Toolkit? 
 The _SRA Toolkit_ is a set of programs, also called _Tools_,  you install on your local computer or Cloud-based computer that are used for _data dumping_. 
 _Data dumping_ is a technology term for extracting and copying data from one system to another.  
 
-The SRA Toolkit offers a set of custom-designed commands that users run in a [command line terminal](how_to_CLI.md). The commands have names that refer to their purpose: 
+The SRA Toolkit offers a set of custom-designed commands that users run in a [command line terminal](https://www.freecodecamp.org/news/command-line-for-beginners/). The commands have names that refer to their purpose: 
 - **Tool**: A generic name for a command in the SRA Toolkit 
-- **Dumpers**: SRA Toolkit Tools that download and/or transform data
+- **Dumpers**: SRA Toolkit tools that download and/or transform data
   
-Users primarily use dumpers for two goals: 
+_Dumpers_ are primarily used for two goals: 
 - To download data  
 - To transform data from .sra or .sralite format to another format
 
-The SRA Toolkit cannot dump original submitted files. Instead, use the [Cloud Data Delivery Service](https://www.ncbi.nlm.nih.gov/sra/docs/data-delivery/). 
+The SRA Toolkit cannot download original submitted files. Instead, use the [Cloud Data Delivery Service](https://www.ncbi.nlm.nih.gov/sra/docs/data-delivery/). 
 
 ## What Is an Accession? 
-An accession is a permanent alphanumeric reference code used to locate an NCBI database record. A run accession represents a set of reads submitted to SRA.  
+An _accession_ is a permanent alphanumeric reference code used to locate an NCBI database record. A _run accession_ represents a set of reads availbe in the SRA.  
 
 ## How Do I Search for the Accessions I Need? 
-Some users start with a general search for a specific organism and a specific library type in one of our search options: 
+Some users start with a search for a specific organism and a specific library type in one of our search options: 
 - [NCBI Search](https://www.ncbi.nlm.nih.gov/sra/docs/srasearch/) 
 - [GCP BigQuery](https://www.ncbi.nlm.nih.gov/sra/docs/sra-bigquery/) 
 - [AWS Athena](https://www.ncbi.nlm.nih.gov/sra/docs/sra-athena/) 
  
-Users can create a list of accessions using the Search options shown above and can use the [SRA Run Selector](https://github.com/NCBI-Hackathons/ncbi-cloud-tutorials/blob/master/SRA%tutorials/tutorial_SRA_run_selector.md) to further narrow the search. Then they can use the many Toolkit tools to download accessions, convert formats, and evaluate the data,
+Using the Search options shown above, users can create a list of accessions. Users can use the [SRA Run Selector](https://github.com/NCBI-Hackathons/ncbi-cloud-tutorials/blob/master/SRA%tutorials/tutorial_SRA_run_selector.md) to further narrow the search. Then they can use the many Toolkit tools to download accessions, convert formats, and evaluate the data.
 
 # Options to Download Sequence Data 
-Before you download Toolkit, learn about the different options to download sequence data: 
-- Toolkit' _Prefetch_ tool 
+Before you download Toolkit, learn about the some options to download sequence data: 
+- Toolkit's _Prefetch_ tool 
 - Dumper Tools  
 - Run Browser 
 - Cloud Data Delivery Service (CDDS) 
@@ -40,7 +40,8 @@ When you are downloading many runs, best practice is to run the _Prefetch_ tool,
 **Prefetch Tool Benefits**
 - Downloads all the information needed to transform the data to the format needed.  
   - Once data is downloaded to your local computer or Cloud-based computer, use Toolkit tools to convert the accessions from .sra or .sralite to the desired format.  
-- If network connectivity is interrupted, the Prefetch tool resumes the download rather than starting over. 
+- If network connectivity is interrupted, the Prefetch tool resumes the download rather than starting over.
+- [Read more here](https://github.com/ncbi/sra-tools/wiki/HowTo:-Access-SRA-Data)
 
 ## Toolkit's Dumper Tools 
 _Dumper Tools_ are commands that either:  
@@ -50,7 +51,9 @@ _Dumper Tools_ are commands that either:
 For large amounts of data, to download and convert in one step: 
   - May be slower  
   - May download more data than needed 
-  - Will have to restart the download if there is a network interruption 
+  - Will have to restart the download if there is a network interruption
+
+ The most commonly used dumper tool is fasterq-dump.
 
 ## Run Browser 
 _Run Browser_ is a browser-based tool often used to quickly view sequences from [NCBI Search Bar](https://www.ncbi.nlm.nih.gov/sra/docs/srasearch/). Use Run Browser to download one run at a time that contains less than 5 Gbases of sequence in fasta or fastq format. 
@@ -61,10 +64,11 @@ SRA data is available on the Google Cloud Platform (GCP) and Amazon Web Services
 Toolkit cannot download accessions in their originally submitted format or transform to original submitted format. To download data in Original Source format, use [Cloud Data Delivery Service (CDDS)](https://www.ncbi.nlm.nih.gov/sra/docs/data-delivery). 
 
 # Data Download Costs 
-### Toolkit 
-Using Toolkit, you can download SRA data without egress charges from the following options: 
+you can download SRA data without egress charges from the following options: 
 - The NCBI Cloud to your Cloud storage (use CDDS)
-- NCBI to your local computer
+- NCBI to your local computer.
+
+Install toolkit on your local computer or your Cloud-based computer to use the Toolkit tools.
 
 ### CDDS – Cloud Data Deliver Service 
 For Cloud users use CDDS to download all SRA files, including source files and Covid files (which are the Original Submitted files) from the NCBI Cloud to your Cloud storage for free. If you  download from your Cloud storage to your local computer, you will incur egress charges from your Cloud Service Provider. See [NCBI’s blog post on CDDS Charges](https://ncbiinsights.ncbi.nlm.nih.gov/2021/09/23/sra-cloud-bucket/?utm_source=ncbi_insights&utm_medium=referral&utm_campaign=sra-data-distribution-20221215). 
@@ -77,12 +81,12 @@ The CDDS service limits downloads to approximately 5TB per 30 days.
 For more information on the Cloud, see [SRA in the Cloud](https://www.ncbi.nlm.nih.gov/sra/docs/sra-cloud/) on the NCBI website and [Install Toolkit in the Cloud](https://github.com/ncbi/sra-tools/wiki/01.-Downloading-SRA-Toolkit). 
 
 # Things to Know Prior to Using Toolkit 
-**1.	Do you know how to use a Command Line Terminal?**  
-Review the mini lesson on [How to Use Command Line](how_to_CLI.md). 
+**1.	Command Line Terminal?**  
+The internet has many resources for learning to use a Command Line terminal.
 
 **2.	Do you know what your “current working directory”** is? 
 - The word _directory_ is the technical term for a computer folder. The _current working directory (CWD)_ is the folder from which the user is currently working. 
-- You see it in a command line terminal: The working directory is the folder to the left of the > greater than sign
+- You see it in a command line terminal. In the figure below, the working directory is the folder to the left of the > greater than sign.
 
 **Figure: Example of the Working Directory**
   
@@ -93,9 +97,9 @@ Review the mini lesson on [How to Use Command Line](how_to_CLI.md).
 - Yes – choose .sra (also called SRA Normalized) format
 - Not Sure – see [SRA Data Formats](https://www.ncbi.nlm.nih.gov/sra/docs/sra-data-formats/) 
 
-**4. Does Toolkit provide a conversion tool for the format you need?**  
-Toolkit includes tools called dumpers to convert the .sra or .sralite formats to the following formats: 
-- FASTQ 
+**4. Does Toolkit provide a dumper tool for the format you need?**  
+Toolkit includes tools called dumpers that convert the .sra or .sralite formats to the following formats: 
+- FASTERQ 
 - BAM/SAM 
 - SFF 
 - ABI Native – has color space data only 
@@ -115,13 +119,13 @@ Your options for computing include your personal computer, your organization’s
 
 Cache space is where .sra and .sralite formatted files are stored on your computer to facilitate the work done by other Toolkit tools. In Toolkit’s cache spaces, two types of work happen:   
 
-Format conversion occurs in the _process-local_ cache space  
+  * Format conversion occurs in the _process-local_ cache space  
 
-Persistent storage occurs in the _user-repository_ cache space 
+  * Persistent storage occurs in the _user-repository_ cache space 
 
 ***process-local***
 
-Process-local is where files that are needed to help convert formats will be stored. These files are temporary and exist to help transform data from one format to another, for example .sra or .sralite format to another format like FASTQ. When the conversion is finished, the temporary files are automatically deleted.   
+Process-local is where files that are needed to help convert formats will be stored. These files are temporary and exist to help transform data from one format to another, for example from .sra or .sralite format to another format like FASTQ. When the conversion is finished, the temporary files are automatically deleted.   
 
 ***user-repository***
 
@@ -142,10 +146,10 @@ After downloading Toolkit, you will choose the locations for _process-local_ and
 | Operating System  | _process-local_ | _Optional user-repository_ (storage)|
 |--- | --- |---|
 | PC | C: drive | D: drive|
-| Mac | HD drive <br> - select /data/$USER (/home/$USER is limited to a quota of 16 GB)  | external drive |
+| Mac | HD drive <br> - select `/data/$USER` <br>(_/home/$USER_ is limited to a quota of 16 GB)  | external drive |
 | AWS | EC2 | EBS Volumne | 
 | GCP | Compute Engine | Persistent Disk |
-| Linux | /dev/sda <br> - select /data/$USER (/home/$USER is limited to a quota of 16 GB) | /dev/sdb |
+| Linux | `/dev/sda` <br> - select `/data/$USER` <br>(_/home/$USER_ is limited to a quota of 16 GB) | /dev/sdb |
 
 
  
@@ -170,7 +174,7 @@ Before you _prefetch_ your data, make a quick estimation about the hard-drive sp
 
 - The final FASTQ data, which downloads to the current working directory, will be approximately 7 times the size of the run.  
 
-  - You can designate a different destination for your FASTQ files by using the -O option. See [fasterq-dump options](bookmark://_Fasterq-dump)
+  - You can designate a different destination for your FASTQ files by using the -O option. See [fasterq-dump options](wiki/toolkit-appendix.html#fasterq-dump)
 
 - The _fasterq-dump_ tool needs the _process-local_ cache space to complete the conversion, about 10 times the size of the final fastq files.  
 
