@@ -61,7 +61,7 @@ _Run Browser_ is a browser-based tool often used to quickly view sequences from 
 ## Cloud Data Delivery Service   
 SRA data is available on the Google Cloud Platform (GCP) and Amazon Web Services (AWS) clouds. Almost all publicly available, unassembled read data and authorized-access human data, including original submitted formats, are available for download from these Cloud providers. The SRA Team created the Cloud Data Delivery Service (CDDS) to enable downloading to user's Cloud storage.  
 
-Toolkit cannot download accessions in their originally submitted format or transform to original submitted format. To download data in Original Source format, use [Cloud Data Delivery Service (CDDS)](https://www.ncbi.nlm.nih.gov/sra/docs/data-delivery). 
+Toolkit cannot download accessions in their originally submitted format or transform to original submitted format. To learn more about CDDS or for information on how to download data in Original Source format, use Cloud Data Delivery Service (CDDS), use [Cloud Data Delivery Service (CDDS)](https://www.ncbi.nlm.nih.gov/sra/docs/data-delivery). 
 
 # Data Download Costs 
 you can download SRA data without egress charges from the following options: 
@@ -113,7 +113,7 @@ If you need a different format than listed above, then pull Original Submitted f
 
 **5. Which computer are you using?**
 
-Your options for computing include your personal computer, your organization’s computer, or a Cloud-based computer like AWS’s _EC2_ or GCP’s _Compute Engine_.  
+Your options for computing include your personal computer, your organization’s computer, or a Cloud-based computer like AWS’s _EC2_ or GCP’s _Compute Engine_.  See [SRA in the Cloud](https://www.ncbi.nlm.nih.gov/sra/docs/sra-cloud/) for more information. 
 
 **6.What is _cache space_?** 
 
@@ -199,7 +199,7 @@ The dumper tool will fail if it estimates the amount of space available will be 
 
 **9. How much storage space is available on your local computer?**
 
-If you need more space than your local computer offers, consider downloading the smaller .sralite format or using AWS or GCP cloud option. 
+If you need more space than your local computer offers, consider downloading the smaller .sralite format or [using a Cloud option](https://www.ncbi.nlm.nih.gov/sra/docs/sra-cloud/). 
 
 **PC** 
 
