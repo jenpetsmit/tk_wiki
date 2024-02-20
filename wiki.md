@@ -63,8 +63,8 @@ SRA data is available on the Google Cloud Platform (GCP) and Amazon Web Services
 
 Toolkit cannot download accessions in their originally submitted format or transform to original submitted format. To learn more about CDDS or for information on how to download data in Original Source format, use Cloud Data Delivery Service (CDDS), use [Cloud Data Delivery Service (CDDS)](https://www.ncbi.nlm.nih.gov/sra/docs/data-delivery). 
 
-# Data Download Costs 
-you can download SRA data without egress charges from the following options: 
+### Data Download Costs 
+You can download SRA data without egress charges from the following options: 
 - The NCBI Cloud to your Cloud storage (use CDDS)
 - NCBI to your local computer.
 
