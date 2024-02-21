@@ -63,7 +63,7 @@ SRA data is available on the Google Cloud Platform (GCP) and Amazon Web Services
 
 For Cloud users use CDDS to download all SRA files, including source files and Covid files (which are the Original Submitted files) from the NCBI Cloud to your Cloud storage for free. If you  download from your Cloud storage to your local computer, you will incur egress charges from your Cloud Service Provider. See [NCBI’s blog post on CDDS Charges](https://ncbiinsights.ncbi.nlm.nih.gov/2021/09/23/sra-cloud-bucket/?utm_source=ncbi_insights&utm_medium=referral&utm_campaign=sra-data-distribution-20221215). 
 
-Toolkit cannot download accessions in their originally submitted format or transform to original submitted format. To learn more about CDDS or for information on how to download data in Original Source format, use Cloud Data Delivery Service (CDDS), use [Cloud Data Delivery Service (CDDS)](https://www.ncbi.nlm.nih.gov/sra/docs/data-delivery). 
+Toolkit cannot download accessions in their originally submitted format or transform to original submitted format. To learn more about CDDS or for information on how to download data in Original Source format, see [Cloud Data Delivery Service (CDDS)](https://www.ncbi.nlm.nih.gov/sra/docs/data-delivery). 
 The CDDS service limits downloads to approximately 5TB per 30 days. 
 
 Install toolkit on your local computer or your Cloud-based computer to use the Toolkit tools.
