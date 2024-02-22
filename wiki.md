@@ -16,16 +16,18 @@ _Dumpers_ are primarily used for two goals:
 
 The SRA Toolkit cannot download original submitted files. Instead, use the [Cloud Data Delivery Service](https://www.ncbi.nlm.nih.gov/sra/docs/data-delivery/). 
 
-## What Is an Accession? 
-An _accession_ is a permanent alphanumeric reference code used to locate an NCBI database record. A _run accession_ represents a set of reads availbe in the SRA.  
 
 ## How Do I Search for the Accessions I Need? 
+
+### What Is an Accession? 
+An _accession_ is a permanent alphanumeric reference code used to locate an NCBI database record. A _run accession_ represents a set of reads availble in the SRA and has the prefex SRR, e.g., SRR000001.
+
 Some users start with a search for a specific organism and a specific library type in one of our search options: 
 - [NCBI Search](https://www.ncbi.nlm.nih.gov/sra/docs/srasearch/) 
 - [GCP BigQuery](https://www.ncbi.nlm.nih.gov/sra/docs/sra-bigquery/) 
 - [AWS Athena](https://www.ncbi.nlm.nih.gov/sra/docs/sra-athena/) 
  
-Using the Search options shown above, users can create a list of accessions. Users can use the [SRA Run Selector](https://www.ncbi.nlm.nih.gov/Traces/study/) to further narrow the search. Then they can use the many Toolkit tools to download accessions, convert formats, and evaluate the data.
+Using the Search options shown above, users can create a list of accessions. Users can use the [SRA Run Selector](https://www.ncbi.nlm.nih.gov/Traces/study/) to further narrow the search. Then they can use the many Toolkit tools (installed on a local or Cloud-based computer) to download accessions, convert formats, and evaluate the data.
 
 # Options to Download Sequence Data 
 Before you download Toolkit, learn about the some options to download sequence data: 
@@ -39,7 +41,7 @@ When you are downloading many runs, best practice is to run the _Prefetch_ tool,
 
 **Prefetch Tool Benefits**
 - Downloads all the information needed to transform the data to the format needed.  
-  - Once data is downloaded to your local computer or Cloud-based computer, use Toolkit tools to convert the accessions from .sra or .sralite to the desired format.  
+  - Once data is _prefetched_ to your local computer or Cloud-based computer, use Toolkit tools to convert the accessions from .sra or .sralite to the desired format.  
 - If network connectivity is interrupted, the Prefetch tool resumes the download rather than starting over.
 - [Read more here](https://github.com/ncbi/sra-tools/wiki/HowTo:-Access-SRA-Data)
 
@@ -53,10 +55,10 @@ For large amounts of data, to download and convert in one step:
   - May download more data than needed 
   - Will have to restart the download if there is a network interruption
 
- The most commonly used dumper tool is fasterq-dump.
+ The most commonly used dumper tool is _fasterq-dump_.
 
 ## Run Browser 
-_Run Browser_ is a browser-based tool often used to quickly view sequences from [NCBI Search Bar](https://www.ncbi.nlm.nih.gov/sra/docs/srasearch/). Use Run Browser to download one run at a time that contains less than 5 Gbases of sequence in fasta or fastq format. 
+_Run Browser_ is a browser-based option often used to quickly view sequences from [NCBI Search Bar](https://www.ncbi.nlm.nih.gov/sra/docs/srasearch/). Use Run Browser to download one run at a time that contains less than 5 Gbases of sequence in fasta or fastq format. 
 
 ## Cloud Data Delivery Service   
 SRA data is available on the Google Cloud Platform (GCP) and Amazon Web Services (AWS) clouds. Almost all publicly available, unassembled read data and authorized-access human data, including original submitted formats, are available for download from these Cloud providers. The SRA Team created the Cloud Data Delivery Service (CDDS) to enable downloading to user's Cloud storage.  
@@ -66,12 +68,10 @@ For Cloud users use CDDS to download all SRA files, including source files and C
 Toolkit cannot download accessions in their originally submitted format or transform to original submitted format. To learn more about CDDS or for information on how to download data in Original Source format, see [Cloud Data Delivery Service (CDDS)](https://www.ncbi.nlm.nih.gov/sra/docs/data-delivery). 
 The CDDS service limits downloads to approximately 5TB per 30 days. 
 
-Install toolkit on your local computer or your Cloud-based computer to use the Toolkit tools.
-
 ### Data Download Costs 
 You can download SRA data without egress charges from the following options: 
 - The NCBI Cloud to your Cloud storage (use CDDS)
-- NCBI to your local computer.
+- NCBI _on premises_ to your local computer
 
 **Figure: SRA End User Access Costs**
 
