@@ -2,6 +2,7 @@
 * [prefetch](#prefetch)
 * [vdb-config](#vdg-config)
 * [fasterq-dump](@fasterq-dump)
+* [cache-mgr](#cache-mgr)
 
 # Prefetch
 
@@ -109,7 +110,7 @@ Summary:   Manage VDB configuration
 | -C<br>--cloud-info                              | Display cloud-related information                                                                                                                                                   |
 | --cfg-dir   <path>                              | Set folder to load configuration                                                                                                                                                     |
 | -d<br>--load-path                               | Print load path                                                                                                                                                                      |
-| -e<br>--<br>--env                               | Print shell variables                                                                                                                                                             |
+| -e<br>--env                               | Print shell variables                                                                                                                                                             |
 | -f<br>-files                                    | Print loaded files                                                                                                                                                                 |
 | -h<br>--help                                    | Output brief explanation for the   program                                                                                                                                           |
 | -i<br>--interactive                             | Create/update configuration                                                                                                                                                          |
@@ -135,3 +136,29 @@ Summary:   Manage VDB configuration
 | --set-gcp-credentials   <path>                  | Select file with GCP credentials                                                                                                                                                     |
 | -V<br>--version                                 | Display the version of the program   then quit                                                                                                                                       |
 | -v<br>--verbose                                 | Increase the verbosity of the   program status messages. Use multiple times for more verbosity. Negates   quiet.                                                                      |
+
+
+
+
+# cache-mgr
+
+  cache-mgr [path_to_cache] options
+  |    <br>Command options      |    <br>Explanation                                                                                                                                |
+|-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+|                             |                                                                                                                                                   |
+| -d<br>--disable             | disable repository [user/site/rem]                                                                                                                |
+| -e<br>--enable              | enable repository [user/site/rem]                                                                                                                 |
+| -h<br>--help                | Output brief explanation for the   program.                                                                                                       |
+| -i<br>--remove-dirs         | remove directories, not only files                                                                                                                                                                             
+| -L<br>--log-level   <level> | Logging level as number or enum   string. One of (fatal \| sys \| int \| err \| warn \| info \| debug) or   (0-6) <br>Current/default is warn |
+| -m<br>--max-remove          | remove until reached that many   bytes                                                                                                            |
+| -o<br>--rep-report          | report status of repositories                                                                                                                     |
+| --option-file   <file>      | Read more options and parameters   from the file.                                                                                                 |
+| -p<br>--user-repo-name      | restrict to this user-repository                                                                                                                  |
+| -q<br>--quiet               | Turn off all status messages for   the program. <br>Negated by verbose.                                                                           |
+| -r<br>--report              | report objects in cache                                                                                                                           |
+| -t<br>--details             | show detailed report                                                                                                                              |
+| -u<br>--unlock              | remove lock-files                                                                                                                                 |
+| -V<br>--version             | Display the version of the program   then quit.                                                                                                   |
+| -v<br>--verbose       | Increase the verbosity of the   program status messages. Use multiple times for more verbosity.   Negates quiet.                              |
+| -z<br>--test-zero           | test for zero blocks (for report   function)                                                                                                      |
