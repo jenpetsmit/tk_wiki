@@ -43,6 +43,7 @@ When you are downloading many runs, best practice is to run the _Prefetch_ tool,
 - Downloads all the information needed to transform the data to the format needed.  
   - Once data is _prefetched_ to your local computer or Cloud-based computer, use Toolkit tools to convert the accessions from .sra or .sralite to the desired format.  
 - If network connectivity is interrupted, the Prefetch tool resumes the download rather than starting over.
+- [See List of Prefetch Tool Options](toolkit-tools-options.md#prefetch)
 - [Read more here](https://github.com/ncbi/sra-tools/wiki/HowTo:-Access-SRA-Data)
 
 ## Toolkit's Dumper Tools 
