@@ -1,7 +1,7 @@
 # Toolkit Tool Options
 * [prefetch](#prefetch)
 * [vdb-config](#vdg-config)
-* [fasterq-dump](@fasterq-dump)
+* [fasterq-dump](#fasterq-dump)
 * [cache-mgr](#cache-mgr)
 
 # Prefetch
