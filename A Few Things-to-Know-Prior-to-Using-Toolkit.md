@@ -1,15 +1,9 @@
-# Things to Know Prior to Using Toolkit 
-
 ## Command Line Terminal
-If you are not familiar, the internet has many resources for learning how to use a Command Line Terminal.
+If you are not familiar, see [Command Line for Beginners](https://www.freecodecamp.org/news/command-line-for-beginners/).
 
 ## Do you know what your “current working directory” is?
-- The word _directory_ is the technical term for a computer folder. The _current working directory (CWD)_ is the folder from which the user is currently working. 
-- You see it in a command line terminal. In the figure below, the working directory is the folder to the left of the > greater than sign.
-
-**Figure: Example of the Working Directory**
-  
-![Image of Working Directory](images/wiki/workingdir.png)]
+The _current working directory (CWD)_ is the folder from which the user is currently working. 
+See [What is a Current Directory](https://www.computerhope.com/jargon/c/currentd.htm) for more information.
 
 ## Do you need base quality scores?
 - No – choose .sralite format 
@@ -17,22 +11,17 @@ If you are not familiar, the internet has many resources for learning how to use
 - Not Sure – see [SRA Data Formats](https://www.ncbi.nlm.nih.gov/sra/docs/sra-data-formats/) 
 
 ## Does Toolkit provide a dumper tool for the format you need?
-Toolkit includes tools called dumpers that convert the .sra or .sralite formats to the following formats: 
-- FASTERQ 
-- BAM/SAM 
-- SFF 
-- ABI Native – has color space data only 
-  - cfasta 
-  - qual 
-- Illumina Native 
-  - qcal 
-  - seq    
+Toolkit includes tools called _dumpers_ that convert the .sra or .sralite formats to the following formats: 
+- FASTQ or FASTA
+- SAM
+  - You can use samtools to convert to BAM
+- Pileup (like samtools pileup). If the data was submitted in aligned form, the extraction can be done
+- SFF (only if the submitted data was 454 Lifesciences)
+- ABI Native (only if the submitted data was ABI native)
+- Illumina native (only if the submitted data was Illumina native)
+  
 
-If you need a different format than listed above, then pull Original Submitted files via [CDDS](https://www.ncbi.nlm.nih.gov/sra/docs/data-delivery/). 
-
-## Which computer are you using?
-
-Your options for computing include your personal computer, your organization’s computer, or a Cloud-based computer like AWS’s _EC2_ or GCP’s _Compute Engine_.  See [SRA in the Cloud](https://www.ncbi.nlm.nih.gov/sra/docs/sra-cloud/) for more information. 
+If you need a different format than listed above, you can request the original files in the format in which they were submitted via [CDDS](https://www.ncbi.nlm.nih.gov/sra/docs/data-delivery/). 
 
 ## What is _cache space_?
 
