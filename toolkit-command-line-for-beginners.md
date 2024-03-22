@@ -4,8 +4,8 @@ This page provides the most basic information on how to use Command Line, a reso
 ## Command Line Terminal
 See [Command Line for Beginners](https://www.freecodecamp.org/news/command-line-for-beginners/) for more information.
 
-## Do you know what your “current working directory” is?
-The _current working directory (CWD)_ is the folder from which the user is currently working. 
+### Do you know what your “current working directory” is?
+In simple terms, the _current working directory (CWD)_ is the folder from which the user is currently working. 
   
   **Figure: Example of the Working Directory**
 
@@ -13,12 +13,12 @@ The _current working directory (CWD)_ is the folder from which the user is curre
 
 See [What is a Current Directory](https://www.computerhope.com/jargon/c/currentd.htm) for more information.
 
-## Export Command
-  
+Setting up 
   
 
 
 Note:	The direction of slashes varies with operating system
+## Working in the Command Line Interface
 
 1.	Open command line terminal
   •	PC 	Click **Start** and search for **Command Line** 
@@ -32,11 +32,11 @@ Note:	The direction of slashes varies with operating system
 
 The structure of folders is a vertical hierarchy. 
 
-3.	To change to a lower directory one level down, type `cd <name of directory>`
+3.  To change to a lower directory one level down, type `cd <name of directory>`
 
 ![c d Documents](images/wiki/command.png)
 
-4.4.	To change to a lower more than one level down, type 
+4. To change to a lower more than one level down, type 
  
  `cd <path/to/directory>`
 
