@@ -1,5 +1,5 @@
-## Command Line Terminal
-If you are not familiar, see [Command Line for Beginners](https://www.freecodecamp.org/news/command-line-for-beginners/).
+## Do You Know How to Use Command Line Terminal?
+If you are not familiar, see [Command Line for Beginners](https://www.freecodecamp.org/news/command-line-for-beginners/) or search the internet for other resources.
 
 ## Do you know what your “current working directory” is?
 The _current working directory (CWD)_ is the folder from which the user is currently working. 
@@ -8,10 +8,19 @@ See [What is a Current Directory](https://www.computerhope.com/jargon/c/currentd
 ## Do you need base quality scores?
 - No – choose .sralite format 
 - Yes – choose .sra (also called SRA Normalized) format
-- Not Sure – see [SRA Data Formats](https://www.ncbi.nlm.nih.gov/sra/docs/sra-data-formats/) 
+- Not Sure – see [SRA Data Formats](https://www.ncbi.nlm.nih.gov/sra/docs/sra-data-formats/)
+
+## Do you know the following terms?
+|  Term | Explanation  | Example |
+|:----------------------------------------------------------- |:--- |:---|
+| Run | The runs are where the actual DNA sequences reside. <br> Runs are stored in data files   | [Link to example](https://trace.ncbi.nlm.nih.gov/Traces/?view=run_browser&page_size=10&acc=SRR000001&display=reads) |
+| Accession |A permanent alphanumeric reference code<br> used to locate a database record or a set of records. | For each SRA submission,<br> there are accessions<br> assigned for BioProject, BioSample,<br> SRA Experiment, and SRA Run  |
+| SRP | SRA Project/Study | PRJNA33627/ SRP000001 <br> [Link to example](https://trace.ncbi.nlm.nih.gov/Traces/?view=run_browser&acc=SRR000001&display=metadata)|
+| SRX | SRA  Experiment | SRX000007 <br> [Link to example](https://trace.ncbi.nlm.nih.gov/Traces/?view=run_browser&acc=SRR000001&display=metadata)|
+|S = NCBI-SRA  <br> E = EMBL-SRA <br> D = DDBJ-SRA  | The first letter of the accession prefix shows <br> from which [International Nucleotide Sequence Database <br> Collaboration (INSDC)](https://www.insdc.org/) archive the data originated   | SRR000001 <br> ERR000001 <br> DRR000001 |
 
 ## Does Toolkit provide a dumper tool for the format you need?
-Toolkit includes tools called _dumpers_ that convert the .sra or .sralite formats to the following formats: 
+Toolkit includes tools called _dumpers_ that can extract the following formats from run accessions: 
 - FASTQ or FASTA
 - SAM
   - You can use samtools to convert to BAM
@@ -23,7 +32,7 @@ Toolkit includes tools called _dumpers_ that convert the .sra or .sralite format
 
 If you need a different format than listed above, you can request the original files in the format in which they were submitted via [CDDS](https://www.ncbi.nlm.nih.gov/sra/docs/data-delivery/). 
 
-## What is _cache space_?
+## What is SRA Toolkit's _cache space_?
 
 Cache space is where .sra and .sralite formatted files are stored on your computer to facilitate the work done by other Toolkit tools. In Toolkit’s cache spaces, two types of work happen:   
 
