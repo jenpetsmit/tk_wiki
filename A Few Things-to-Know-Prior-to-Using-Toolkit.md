@@ -1,7 +1,7 @@
 ## Do You Know How to Use Command Line Terminal?
 If you are not familiar, see [Command Line for Beginners](https://www.freecodecamp.org/news/command-line-for-beginners/) or search the internet for other resources.
 
-## Do you know what your “current working directory” is?
+## Do you know what your _current working directory_ is?
 The _current working directory (CWD)_ is the folder from which the user is currently working. 
 See [What is a Current Directory](https://www.computerhope.com/jargon/c/currentd.htm) for more information.
 
