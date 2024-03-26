@@ -21,6 +21,7 @@ The SRA Toolkit cannot download original submitted files. Instead, use the [Clou
 
 ### What Is an Accession? 
 An _accession_ is a permanent alphanumeric reference code used to locate an NCBI database record. A _run accession_ represents a set of reads availble in the SRA and has the prefex SRR, e.g., SRR000001.
+To learn more SRA terminology, see [A Few Things-to-Know-Prior-to-Using-Toolkit](https://github.com/jenpetsmit/tk_wiki/blob/main/A%20Few%20Things-to-Know-Prior-to-Using-Toolkit.md)
 
 Some users start with a search for a specific organism and a specific library type in one of our search options: 
 - [NCBI Search](https://www.ncbi.nlm.nih.gov/sra/docs/srasearch/) 
