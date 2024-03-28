@@ -120,41 +120,14 @@ If you need more space than your local computer offers, consider downloading the
 
 ### PC 
 
-1. Click **File Explorer** (yellow folder icon)
-
-2. Right click on **C:** and select **Properties** from the menu  
-
-In this screenshot, the C drive has about 394 GB of space.  
-
-If you have a secondary drive, repeat the steps. In this screenshot, the secondary drive is the U: drive. If you have a secondary drive, the letter could be different. 
-
-**Figure: Amount of Drive Space on PC**
-
-![Amount of Space Available](images/wiki/secondarydrive.png)
+[See Find out how much storage your PC has](https://support.microsoft.com/en-us/windows/find-out-how-much-storage-your-pc-has-c7cbe6ef-267b-6b8a-32d9-01161623ba5a)
 
 ### Mac
 
-1. From _Apple menu_, click **About This Mac** 
-
-2. Click the **Storage tab**
-
-In this screenshot, the drive has about 104 GB of space.
-
-**Figure: Amount of Drive Space on Mac**
-
-![Amount of Space Available](images/wiki/secondarydriveMac.png)
-
+[See used and available storage space on your Mac](https://support.apple.com/guide/mac-help/storage-space-mac-syspf9b375b9/mac)
 ### Linux
 
-On Linux systems, you can check how much space you have by running the following command:  
-
- `$df -h .`
-
-Under the 4th column _Avail_, you see the amount of space available. Take into consideration that there might be limits set by your administrator that may not be visible. .
-
-**Figure: Amount of Drive Space on Linux**
-
-![Amount of Space Available](images/wiki/secondarydrivelinux.png)
+[See Check your disk space use with the Linux df command](https://opensource.com/article/18/7/how-check-free-disk-space-linux)
 
 ### Cloud
 
