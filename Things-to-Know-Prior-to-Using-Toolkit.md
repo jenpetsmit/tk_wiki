@@ -124,7 +124,7 @@ If you need more space than your local computer offers, consider downloading the
 
 ### Mac
 
-[See used and available storage space on your Mac](https://support.apple.com/guide/mac-help/storage-space-mac-syspf9b375b9/mac)
+[See Used and available storage space on your Mac](https://support.apple.com/guide/mac-help/storage-space-mac-syspf9b375b9/mac)
 ### Linux
 
 [See Check your disk space use with the Linux df command](https://opensource.com/article/18/7/how-check-free-disk-space-linux)
