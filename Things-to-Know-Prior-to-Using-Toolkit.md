@@ -87,7 +87,7 @@ Check the size of your accession in [NCBI Search Results](https://www.ncbi.nlm.n
 
 Alternatively, from the command line terminal, type the following command to see information that includes the size of the accession in bytes: 
 
-`vdb-dump SRR000001 --info `
+`vdb-dump SRR1951777 --info `
 
 To convert the data from prefetched .sra or .sralite, your process-local cache space will need to be large enough to complete the work.  
 
