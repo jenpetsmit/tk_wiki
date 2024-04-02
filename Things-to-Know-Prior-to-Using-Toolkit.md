@@ -1,4 +1,10 @@
-## Do You Know How to Use Command Line Terminal?
+## How to resolve an issue?
+1. Check [FAQ](https://github.com/ncbi/sra-tools/wiki/FAQ)
+2. If the FAQ section does not resolve your issue and the problem is with data, send a message to the [SRA Team](sra@ncbi.nlm.nih.gov) 
+3. If the problem is with the tools then create an issue 
+4. If  you are not sure what the issue is send a message to sra@ncbi.nlm.nih.gov  
+
+## Do you know how to use Command Line Terminal?
 If you are not familiar, see [Command Line for Beginners](https://www.freecodecamp.org/news/command-line-for-beginners/) or search the internet for other resources.
 
 ## Do you know what your _current working directory_ is?
