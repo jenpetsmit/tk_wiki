@@ -60,7 +60,7 @@ For large amounts of data, to download and convert in one step:
  The most commonly used dumper tool is _fasterq-dump_.
 
 ## Run Browser 
-_Run Browser_ is a browser-based option often used to quickly view sequences from [NCBI Search Bar](https://www.ncbi.nlm.nih.gov/sra/docs/srasearch/). Use Run Browser to download one run at a time that contains less than 5 Gbases of sequence in fasta or fastq format. 
+_Run Browser_ is a browser-based option often used to quickly view sequences from [NCBI Search Bar](https://www.ncbi.nlm.nih.gov/sra/docs/srasearch/). Use Run Browser to download one run at a time that contains less than 5 Gbases of sequence in fasta or fastq format. See [Downloading SRA data for more information on Run Brownser](https://www.ncbi.nlm.nih.gov/sra/docs/sradownload/).
 
 ## Cloud Data Delivery Service   
 SRA data is available on the Google Cloud Platform (GCP) and Amazon Web Services (AWS) clouds. Almost all publicly available, unassembled read data and authorized-access human data, including original submitted formats, are available for download from these Cloud providers. The SRA Team created the Cloud Data Delivery Service (CDDS) to enable downloading to user's Cloud storage.  
